@@ -7,6 +7,9 @@
   <a href="https://www.giss.nasa.gov/tools/panoply/download/">
       <img src="https://img.shields.io/badge/Panoply-5.11-blue.svg">
   </a>
+  <a href="https://github.com/pudding0503/nc2kml/releases">
+  	<img src="https://img.shields.io/github/v/release/pudding0503/nc2kml?label=version" />
+  </a>
   <a href="https://github.com/pudding0503/nc2kml/issues">
   	<img alt="Issues" src="https://img.shields.io/github/issues/pudding0503/my-git-bash.svg?color=F48D73">
   </a>
@@ -14,6 +17,7 @@
   	<img alt="Github" src="https://img.shields.io/github/license/pudding0503/my-git-bash.svg?logo=github">
   </a>
 </p>
+
 
 ### 1.安装 Panoply
 
