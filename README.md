@@ -34,7 +34,7 @@ PATH=;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
 （注：注意：变量值之间用";"隔开。注意原来Path的变量值末尾有没有;号，如果没有，先输入;号再输入。）
 ```
 
-4. 2.导出 Plot输入 `java -version` 检查 Java 版本
+4. 输入 `java -version` 检查 Java 版本
 
 ### 2.例示数据
 
@@ -60,11 +60,11 @@ MERRA2_100.tavg1_2d_rad_Nx.19800101.nc4
 
 #### 3.1 Plot 设置与导出
 
-在 Plot 页面打开 **Overlays**, **Grid**, **Layout**, **Scale** 这四个窗口，将所有的线条宽度改为 0，颜色底色设置为白色，仅保留辐射渲染颜色部分即可。界面边框改为 0，取消所有的标题和文字性的内容。
+在 Plot 页面打开 **Overlays**, **Grid**, **Layout**, **Scale** 这四个窗口，将**所有的线条宽度改为 0**，**颜色底色设置为白色**，仅保留辐射渲染颜色部分即可。**界面边框改为 0**，**取消所有的标题和文字性的内容**。
 
 ![](assets/screenshots-1.png)
 
-然后选择 File - Export Animation，按需导出需要的 png 图片序列：
+然后选择 **File -> Export Animation**，按需导出需要的 png 图片序列：
 
 ![](assets/screenshots-2.png)
 
@@ -75,6 +75,12 @@ MERRA2_100.tavg1_2d_rad_Nx.19800101.nc4
 #### 3.3 图片移除底色
 
 由于 Panoply 导出的 png 图片无法设置为透明背景，所以还需要将白色底色进行移除。
+
+你需要安装 Pillow 库：
+
+```shell
+pip install Pillow 
+```
 
 在 `去除白底.py` 中，设置路径为你的图片序列所在的文件夹即可（注意 Windows 下建议采用双斜杠或者单反斜杠）：
 
