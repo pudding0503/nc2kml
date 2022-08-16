@@ -64,7 +64,12 @@ MERRA2_100.tavg1_2d_rad_Nx.19800101.nc4
 
 #### 3.1 Plot 设置与导出
 
-在 Plot 页面打开 **Overlays**, **Grid**, **Layout**, **Scale** 这四个窗口，将**所有的线条宽度改为 0**，**颜色底色设置为白色**，仅保留辐射渲染颜色部分即可。**界面边框改为 0**，**取消所有的标题和文字性的内容**。
+在 Plot 页面打开 **Overlays**、 **Grid**、 **Layout**、 **Scale** 这四个窗口，并根据红框标注的位置进行修改：
+
+- Overlays：将线条宽度改为 0
+- Grid：将线条宽度改为 0
+- Layout：全部取消选中
+- Scale：填充颜色改为黑色，线条宽度改为 0
 
 ![](assets/screenshots-1.png)
 
@@ -86,11 +91,12 @@ MERRA2_100.tavg1_2d_rad_Nx.19800101.nc4
 pip install Pillow 
 ```
 
-在 `去除白底.py` 中，设置路径为你的图片序列所在的文件夹即可（注意 Windows 下建议采用双斜杠或者单反斜杠）：
+在 `去除黑白底色底.py` 中，设置路径为你的图片序列所在的文件夹即可（注意 Windows 下建议采用双斜杠或者单反斜杠）：
 
 ```python
 # 设定 png 图片目录
-path = "D://yourpath//480//"
+# 由于 Windows 的安全特性，不要使用 C 盘路径
+path = "D://yourpath//"
 ```
 
 然后运行此 Python 脚本即可，所有图片将全部删去白色底色。
